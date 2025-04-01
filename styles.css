@@ -6,7 +6,8 @@ body {
 }
 
 header {
-    background-image: url('banner.png');
+    position: relative;
+    background-image: url('imgs/banner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +18,7 @@ header {
     justify-content: center;
     text-align: center;
     border-bottom: #0011ff 2px solid;
+    z-index: 1000;
 
 }
 
@@ -54,9 +56,9 @@ nav ul li {
 nav ul li a {
     color: #00ff6a;
     text-decoration: none;
-    font-size: clamp(1.2rem, 4);
+    font-size: clamp(1.2rem, 4vw, 1.2rem);
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    text-shadow: 0px 0px 8px #00ada4b9;
+    text-shadow: 0px 0px 8px #00ff6a;
     display: inline-block;
     padding: 5px 10px;
 
@@ -68,12 +70,32 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
+#backToTop {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #00ffcc;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.3;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 5;
+    box-shadow: 0px 0px 12px #00ffea;
+}
+
+
+
+
 .skills-header {
     margin-top: 20px;
     border-top: #0011ff 2px solid;
     border-bottom: #ff00dd 2px solid;
     box-shadow: 0px 5px 12px #c300ff;
-    background-image: url('icegif-96.gif');
+    background-image: url('imgs/icegif-96.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,6 +104,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: -2;
 }
 
 
@@ -140,6 +163,7 @@ nav ul li a:hover {
 
 #skills {
     margin-bottom: 0;
+
 }
 
 .skills-content h2 {
@@ -156,12 +180,13 @@ nav ul li a:hover {
     letter-spacing: 2px;
 }
 
+
 .interests-header {
 
     border-top: #0011ff 2px solid;
     border-bottom: #ff00dd 2px solid;
     box-shadow: 0px 5px 12px #c300ff;
-    background-image: url('smokinrain.gif');
+    background-image: url('imgs/smokinrain.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,15 +236,66 @@ nav ul li a:hover {
 }
 
 
-
-
 .cats,
 .wife {
     width: 45%;
     height: auto;
-
     border-radius: 10px;
     border: 2px solid #00ffea;
     box-shadow: 0px 0px 12px #00ffea;
-    margin-bottom: 10%;
+
+}
+
+.interests-content ul {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.card-games {
+    text-align: left;
+}
+
+.tourney-win {
+    text-align: center;
+    border: 2px solid #00ffea;
+    box-shadow: 0px 0px 12px #00ffea;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.tourney-win img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tourney-win figcaption {
+    font-style: italic;
+    margin-top: 5px;
+    color: #adabab;
+}
+
+.winner-cards {
+    text-align: center;
+    border: 2px solid #00ffea;
+    box-shadow: 0px 0px 12px #00ffea;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.winner-cards img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.winner-cards figcaption {
+    font-style: italic;
+    margin-top: 5px;
+    color: #adabab;
 }
