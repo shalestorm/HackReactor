@@ -1,0 +1,108 @@
+body {
+    background-color: #0d0d0d;
+    color: #00ffea;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    color: #00ffea;
+    text-shadow: 0px 0px 8px #00ffea;
+    font-size: 2.5em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ffea;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.788);
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+    text-shadow: 0px 0px 8px #ff007f;
+}
+
+.skills-header {
+    margin-top: 20px;
+    border-top: #0011ff 2px solid;
+    border-bottom: #ff00dd 2px solid;
+    box-shadow: 0px 5px 12px #c300ff;
+    background-image: url('icegif-96.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#intro {
+    padding: 20px;
+    border: 2px solid #00ffea;
+    box-shadow: 0px 0px 12px #00ffea;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    border: 2px solid #0011ff;
+    box-shadow: 0px 0px 12px #0011ff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content p {
+    flex: 1;
+    text-align: left;
+    max-width: 60%;
+}
+
+.portrait {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #00ffea;
+    box-shadow: 0px 0px 12px #00ffea;
+}
