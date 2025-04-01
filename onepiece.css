@@ -7,21 +7,25 @@ body {
 }
 
 header {
+    display: flex;
     position: relative;
     background-color: #2c0a0a;
-    /* Red for the pirate flag feel */
     padding: 20px;
     border-bottom: 2px solid #F5C75E;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     color: white;
     font-size: 3em;
     text-shadow: 0px 0px 8px #F5C75E;
-    font-family: 'PirateFont', cursive;
-    /* Fancy font similar to One Piece style */
+    font-family: 'Orbitron', sans-serif;
+    padding-left: 25%;
 }
+
+
 
 footer {
     background-color: #2c0a0a;
