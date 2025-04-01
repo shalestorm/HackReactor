@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Title of the document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounty Poster Generator</title>
+    <link rel="stylesheet" href="onepiece.css">
 </head>
 
 <body>
-    The content of the document......
+    <header>
+        <h1>Bounty Poster Generator</h1>
+    </header>
+
+    <main>
+        <section class="poster-form">
+            <h2>Create Your Bounty Poster</h2>
+            <form id="bountyForm" action="#" method="get">
+                <label for="characterName">Character Name:</label>
+                <input type="text" id="characterName" name="characterName" required>
+
+                <label for="bountyAmount">Bounty Amount:</label>
+                <input type="number" id="bountyAmount" name="bountyAmount" required>
+
+                <label for="posterImage">Poster Image (Optional):</label>
+                <input type="file" id="posterImage" name="posterImage">
+
+                <button type="submit">Generate Poster</button>
+            </form>
+        </section>
+
+        <section id="generatedPoster" class="poster-output">
+            <!-- Generated poster will appear here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Skyler McLain</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

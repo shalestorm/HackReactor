@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Title of the document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Character Generator</title>
+    <link rel="stylesheet" href="dnd_styles.css"> <!-- Link to external CSS -->
 </head>
 
 <body>
-    The content of the document......
+    <header>
+        <h1>D&D Character Generator</h1>
+    </header>
+
+    <div class="container">
+        <section id="intro">
+            <h2>Generate Your Character</h2>
+            <form action="#" method="get">
+                <input type="text" name="name" placeholder="Character Name" required>
+                <input type="text" name="race" placeholder="Race" required>
+                <input type="text" name="class" placeholder="Class" required>
+                <input type="number" name="level" placeholder="Level" required>
+                <input type="number" name="strength" placeholder="Strength" required>
+                <input type="number" name="dexterity" placeholder="Dexterity" required>
+                <input type="number" name="constitution" placeholder="Constitution" required>
+                <input type="number" name="intelligence" placeholder="Intelligence" required>
+                <input type="number" name="wisdom" placeholder="Wisdom" required>
+                <input type="number" name="charisma" placeholder="Charisma" required>
+                <button type="submit">Generate Character</button>
+            </form>
+        </section>
+
+        <section class="output">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>Example Name</td>
+                    </tr>
+                    <tr>
+                        <td>Race</td>
+                        <td>Example Race</td>
+                    </tr>
+                    <tr>
+                        <td>Class</td>
+                        <td>Example Class</td>
+                    </tr>
+                    <tr>
+                        <td>Level</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Strength</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Dexterity</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Constitution</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Wisdom</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Charisma</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>Made with <span style="color: #ff007f;">&#10084;</span> by Skyler</p>
+    </footer>
 </body>
 
 </html>

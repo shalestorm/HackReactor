@@ -1,0 +1,127 @@
+/* General Body Styling */
+body {
+    background-color: #0d0d0d;
+    color: #00ffea;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    background-image: url('imgs/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: #0011ff 2px solid;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #00ffea;
+    text-shadow: 0px 0px 8px #00ffea;
+    font-size: 2.5em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+footer {
+    border-top: #0011ff 2px solid;
+    background-color: #0d0d0d;
+    color: #00ffea;
+    text-align: center;
+}
+
+.container {
+    padding: 25px;
+}
+
+/* Intro Section */
+#intro {
+    padding: 16px;
+    border: 2px solid #00ffea;
+    box-shadow: 0px 0px 12px #00ffea;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #222;
+}
+
+#intro h2 {
+    color: #00ffea;
+    text-shadow: 0px 0px 8px #00ffea;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: clamp(1.2rem, 4);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #bd04ce;
+    border-radius: 5px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #00ffea;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1cff1c;
+    box-shadow: 0px 0px 12px #6cff6c;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: large;
+    transform: scale(1.01);
+}
+
+/* Output Table */
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #332d2d;
+    border: 1px solid #00ffea;
+}
+
+.output table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: white;
+}
+
+.output table,
+th,
+td {
+    border: 1px solid #00ffea;
+}
+
+th,
+td {
+    padding: 8px;
+}
