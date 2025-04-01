@@ -29,24 +29,33 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin: 5px;
 }
 
 nav ul li a {
-    color: #00ffea;
+    color: #00ff6a;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: 0.3s;
-    background: rgba(0, 0, 0, 0.788);
+    font-size: clamp(1.2rem, 4);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-shadow: 0px 0px 8px #00ada4b9;
+    display: inline-block;
+    padding: 5px 10px;
+
 }
 
 nav ul li a:hover {
     color: #ff007f;
     text-shadow: 0px 0px 8px #ff007f;
+    transform: scale(1.2);
 }
 
 .skills-header {
@@ -67,12 +76,20 @@ nav ul li a:hover {
 
 
 #intro {
-    padding: 20px;
+    padding: 16px;
     border: 2px solid #00ffea;
     box-shadow: 0px 0px 12px #00ffea;
     width: 50%;
     margin: 20px auto;
     border-radius: 10px;
+}
+
+#intro h2 {
+    color: #00ffea;
+    text-shadow: 0px 0px 8px #00ffea;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: clamp(1.2rem, 4)
 }
 
 #about {
