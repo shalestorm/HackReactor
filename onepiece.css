@@ -59,7 +59,7 @@ footer {
 .poster-form input[type="text"],
 .poster-form input[type="number"],
 .poster-form input[type="file"] {
-    width: 100%;
+    width: 85%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #F5C75E;
@@ -93,7 +93,39 @@ footer {
     margin: 0 auto;
     display: none;
     border-radius: 10px;
-    background: url('imgs/bounty.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.poster-output canvas {
+    max-width: 100%;
+    /* Ensures the canvas fits within its container */
+    height: auto;
+}
+
+.user-image {
+    max-width: 300px;
+    /* Make sure it's not larger than intended */
+    height: auto;
+    /* Maintain aspect ratio */
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center the image horizontally */
+}
+
+.poster-output button {
+    background-color: #F5C75E;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.poster-output button:hover {
+    background-color: #FF6600;
 }
 
 .poster-output h3 {
@@ -114,5 +146,4 @@ footer {
     margin-top: 10px;
     font-size: 1.2em;
     color: #ff0000;
-
 }
