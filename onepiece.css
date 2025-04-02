@@ -98,20 +98,16 @@ footer {
 
 .poster-output canvas {
     max-width: 100%;
-    /* Ensures the canvas fits within its container */
     height: auto;
 }
 
 .user-image {
     max-width: 300px;
-    /* Make sure it's not larger than intended */
     height: auto;
-    /* Maintain aspect ratio */
     position: absolute;
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
-    /* Center the image horizontally */
 }
 
 .poster-output button {

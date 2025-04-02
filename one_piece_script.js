@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     userImage.onload = function () {
                         const imageAreaWidth = 500;
                         const imageAreaHeight = 420;
-                        const imgWidth = imageAreaWidth;
-                        const imgHeight = (userImage.height / userImage.width) * imgWidth;
                         ctx.drawImage(userImage, (canvas.width - imageAreaWidth) / 2, 190, imageAreaWidth, imageAreaHeight);
                         ctx.drawImage(posterTemplate, 0, 0, canvasWidth, canvasHeight);
                         ctx.save();
