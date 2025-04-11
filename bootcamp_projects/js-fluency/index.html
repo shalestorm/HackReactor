@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer src="app.js"></script>
+
+    <title>Calm Post</title>
+</head>
+
+<body>
+    <h1>Calm Post</h1>
+    <h3> The app that helps you keep track of people's posts, so you can carry on.</h3>
+    <div class="main-container">
+        <div class="side-container" id="post-body">
+            <div class="section">
+                <h2>Post Title</h2>
+                <p id="post-body-text">
+                    Post body text,
+                    this changes depending on the
+                    post that is clicked on
+                </p>
+            </div>
+        </div>
+        <div class="side-container">
+            <div class="section" id="get-user-post">
+                <select id="user-select">
+                    <option value="">Select a user</option>
+                    <option value="">Select a user</option>
+                    <option value="">Select a user</option>
+                </select>
+                <button id="get-user-posts-button">Get User's Post</button>
+            </div>
+            <div class="section" id="get-all-posts">
+                <button id="get-all-posts-button">Get All Posts</button>
+            </div>
+            <ul id="found-posts">
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

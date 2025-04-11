@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" defer src="app.js"></script>
+
+    <title>Calmplete</title>
+</head>
+
+<body>
+    <h1>Welcome to Calmplete</h1>
+    <h3>The app that helps you track todos, so you can relax.</h3>
+    <button id="night-mode-toggle">Toggle Night Mode</button>
+    <div class="main-container">
+        <div class="side-container" id="todo-body">
+            <div class="section">
+                <h2>Todo Detail</h2>
+                <p id="todo-body-text">
+                    Todo title and who created it will show here when you click on a todo.
+                </p>
+            </div>
+        </div>
+        <div class="side-container">
+            <div class="section" id="get-user-todos">
+                <select id="user-select">
+                    <option value="">Select a user</option>
+                </select>
+                <button id="get-user-todos-button">Get User's Todos</button>
+            </div>
+            <div class="section" id="get-all-todos">
+                <button id="get-all-todos-button">Get All Todos</button>
+            </div>
+            <ul id="found-todos">
+                <!-- Dynamically loaded todos will appear here -->
+                <!-- Below are placeholder todos so you can see -->
+                <!-- what they look like, they should be deleted. -->
+                <li class="todo-item" data-todo-id="1">
+                    Example Todo Item
+                </li>
+                <li class="todo-item" data-todo-id="2">
+                    Example Todo Item 2
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
