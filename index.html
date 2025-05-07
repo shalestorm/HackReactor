@@ -13,6 +13,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hack Reactor Lab</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes shake {
+            0% {
+                transform: rotate(10deg) scale(1);
+                background: repeating-linear-gradient(45deg, red, yellow 10px, lime 20px);
+                color: yellow;
+                box-shadow: 0px 0px 30px rgba(233, 8, 196, 0.979);
+            }
+
+            25% {
+                transform: rotate(40deg) scale(1.3);
+                background: repeating-linear-gradient(90deg, lime, red 10px, yellow 20px);
+                color: hotpink;
+
+            }
+
+            50% {
+                transform: rotate(80deg) scale(2);
+                background: repeating-linear-gradient(90deg, yellow, lime 10px, red 20px);
+                color: gray;
+                box-shadow: 0px 0px 50px rgba(233, 8, 196, 0.979);
+            }
+
+            75% {
+                transform: rotate(120deg) scale(3);
+                background: repeating-linear-gradient(90deg, red, yellow 10px, lime 20px);
+                color: blue;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1.3);
+                background: repeating-linear-gradient(90deg, lime, red 10px, yellow 20px);
+                color: cyan;
+                box-shadow: 0px 0px 50px rgba(233, 8, 196, 0.979);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -40,9 +77,14 @@
                 <li><a href="bootcamp_projects/js-unit-assess/">TodoList Webapp (with nightmode
                         toggle)</a></li>
             </ul>
+            <ul>
+                <li><a href="bootcamp_projects/pokemon-explorer/">PokeDex webapp (made with React)</a></li>
+            </ul>
         </nav>
     </section>
     <main>
+        <img src="imgs/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg"
+            style="width: 90px; height: 90px; margin-bottom: 40px; animation: shake 0.6s infinite;">
         <section id="about">
             <div class="about-header">
                 <h2>About Me</h2>
