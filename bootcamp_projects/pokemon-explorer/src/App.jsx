@@ -31,7 +31,7 @@ const App = () => {
         </video>
       </div>
       <div className="content-overlay">
-        <Routes>
+        <Routes basename='/HackReactor'>
           <Route path="/" element={<Home />} />
           <Route path="/pokedex" element={<Pokedex />} />
           <Route path="/pokemon/:id" element={<PokemonDetails />} />
